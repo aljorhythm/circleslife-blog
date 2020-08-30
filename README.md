@@ -2,6 +2,11 @@
 
 # Development
 
+## API Documentation
+
+Run application and go to
+`http://localhost:<port>/swagger-ui.html`
+
 ## Building
 
 `./gradlew build`

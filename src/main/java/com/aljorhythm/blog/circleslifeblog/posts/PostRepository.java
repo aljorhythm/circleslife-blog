@@ -11,6 +11,4 @@ public interface PostRepository extends ReactiveCrudRepository<Post, String> {
     Flux<Post> findAllByUserId(String userId);
 
     Mono<Post> findTopByOrderByLastModifiedDateDesc();
-
-    Mono<Post> findTopByOrderByLastModifiedDateAsc();
 }

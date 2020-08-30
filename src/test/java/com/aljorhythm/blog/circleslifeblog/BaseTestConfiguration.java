@@ -15,6 +15,7 @@ public class BaseTestConfiguration {
         return args -> {
             operations.dropCollection(User.class);
             operations.insert(User.builder().name("John Doe").build());
+            operations.insert(User.builder().name("Jane Doe").build());
         };
     }
 }

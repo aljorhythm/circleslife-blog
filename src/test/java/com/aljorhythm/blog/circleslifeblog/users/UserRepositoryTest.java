@@ -10,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @DataMongoTest
 @Import(BaseTestConfiguration.class)
-class UserTest {
+class UserRepositoryTest {
 
     @Autowired
     UserRepository userRepository;
 
     @Test
     void johnDoeShouldExist() {
-         User user = userRepository.findByName("John Doe").block();
-         assertNotNull(user);
+        User user = userRepository.findByName("John Doe").block();
+        assertNotNull(user);
     }
 }
